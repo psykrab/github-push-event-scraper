@@ -1,0 +1,55 @@
+{
+  "title": "GitHub Push Events Scraper Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "start_date": {
+      "title": "Start Date",
+      "type": "string",
+      "description": "Required. The first date to scrape data from (YYYY-MM-DD)",
+      "editor": "datepicker",
+      "dateType": "absolute"
+    },
+    "end_date": {
+      "title": "End Date",
+      "type": "string",
+      "description": "Optional. If blank, scrapes up to the most recent available data.",
+      "editor": "datepicker",
+      "dateType": "absolute"
+    },
+    "output_fields": {
+      "title": "Output Fields",
+      "type": "array",
+      "description": "Select the fields you want to include in the output.",
+      "editor": "select",
+      "items": {
+        "type": "string",
+        "enum": [
+          "PushId",
+          "PushTimeStamp",
+          "CommitMessage",
+          "CommitUrl",
+          "CommitAuthorName",
+          "CommitEmail",
+          "UserLogin",
+          "UserEmail",
+          "UserUrl",
+          "RepoUrl"
+        ]
+      },
+      "prefill": [
+        "PushId",
+        "PushTimeStamp",
+        "CommitMessage",
+        "CommitUrl",
+        "CommitAuthorName",
+        "CommitEmail",
+        "UserLogin",
+        "UserEmail",
+        "UserUrl",
+        "RepoUrl"
+      ]
+    }
+  },
+  "required": ["start_date"]
+}

@@ -1,0 +1,38 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": [
+          "PushId",
+          "PushTimeStamp",
+          "CommitAuthorName",
+          "CommitEmail",
+          "CommitMessage",
+          "CommitUrl",
+          "RepoUrl",
+          "UserLogin",
+          "UserEmail",
+          "UserUrl"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "PushId":         { "label": "",   "format": "number"   },
+          "PushTimeStamp": { "label": "",      "format": "date" },
+          "CommitAuthorName":{ "label": "",   "format": "text"     },
+          "CommitEmail":    { "label": "",   "format": "text"     },
+          "CommitMessage":  { "label": "",   "format": "text"     },
+          "CommitUrl":      { "label": "",    "format": "link"     },
+          "RepoUrl":        { "label": "",      "format": "link"     },
+          "UserLogin":      { "label": "",      "format": "text"     },
+          "UserEmail":      { "label": "",     "format": "text"     },
+          "UserUrl":         { "label": "",   "format": "link"   }
+        }
+      }
+    }
+  }
+}

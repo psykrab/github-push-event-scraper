@@ -1,0 +1,16 @@
+{
+    "actorSpecification": 1,
+    "name": "github-push-event-scraper",
+    "version": "1.0",
+    "title": "GitHub Push Events Scraper",
+    "description": "Extracts GitHub push events with your specified date range. Scrapes commit metadata, including author info (name, email), commit messages, and URLs for users, commits, and repos. Ideal for monitoring repository activity or tracking user contributions.",
+    "build": {
+        "buildTag": "latest",
+        "dockerfile": "./Dockerfile"
+    },
+    "input": "./INPUT_SCHEMA.json",
+    "readme": "./README.md",
+    "storages": {
+    "dataset": "./dataset_schema.json"
+    }
+}

@@ -1,0 +1,19 @@
+# Apify SDK and HTTP client
+apify
+requests
+
+# FastAPI web server and dependencies
+fastapi
+uvicorn[standard]
+pydantic
+
+# Scheduler and process management
+apscheduler
+psutil
+
+# Database connector
+pyodbc
+
+# Utilities
+python-dotenv
+cron-descriptor
