@@ -31,13 +31,13 @@ Here is an example of a single output record with all fields selected:
   "PushId": 1234567890,
   "PushTimeStamp": "2025-07-28T10:30:00Z",
   "CommitMessage": "feat: Implement new user authentication flow",
-  "WebCommitUrl": "https://github.com/user/repo/commit/a1b2c3d4e5f6",
+  "CommitUrl": "https://github.com/user/repo/commit/a1b2c3d4e5f6",
   "CommitAuthorName": "Jane Doe",
   "CommitEmail": "jane.doe@example.com",
   "UserLogin": "janedoe",
   "UserEmail": "jane.doe@users.noreply.github.com",
-  "WebUserUrl": "https://github.com/janedoe",
-  "WebRepoUrl": "https://github.com/user/repo"
+  "UserUrl": "https://github.com/janedoe",
+  "RepoUrl": "https://github.com/user/repo"
 }
 ```
 
